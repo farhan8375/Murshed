@@ -1,0 +1,158 @@
+.sidebar-right-wt {
+  width: 290x;
+  height: 80%;
+  position: fixed;
+  top: 6%;
+  left: 60%;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #fff;
+  border: none;
+  /* box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4); */
+  box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.6);
+  z-index: 2147483640;
+  resize: both;
+  overflow: auto;
+  cursor: move;
+}
+
+.initializeIcons{
+position: fixed;
+bottom: 20px;
+right: 47px;
+z-index: 1000;
+display: flex;
+gap: 3px;
+  
+}
+.iconsContainer {
+  position: fixed;
+  bottom: 7px;
+  right: 19px;
+  z-index: 1000;
+  display: none;
+}
+.logoicone{
+  width: 80%;
+  height: 80%;
+}
+.p1{
+  color:#333; 
+  font-size: 12px;
+  line-height: 1.5;
+  
+}
+
+.p2{
+  color: #333;
+  font-size: 12px;
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+
+.title{
+
+  color: #007bff;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 8px;
+  cursor: pointer;
+}
+
+.title2{
+  color: #007bff;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  cursor: pointer
+  
+}
+.seprator{
+border: 0;
+border-top: 1px solid #ddd;
+margin: 12px ,0;
+  
+}
+
+.textContainer{
+position: fixed;
+bottom: 80px;
+right: 45px;
+width: 280px;
+height: 174px;
+padding: 10px;
+background-color: white;
+border: 1px solid #ccc;
+border-radius: 8px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+z-index: 1001;
+
+}
+
+.Righticone{
+  width: 25px;
+  height: 25px;
+  margin-top: 11px;
+  cursor: pointer;
+  display: none;
+ 
+
+}
+
+.icons{
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  margin-top: 7px;
+  display: none;
+  
+}
+
+.icon2{
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.buttonIcon{
+  width: 100px;
+  height: 50px;
+  cursor: pointer;
+  display: none;
+}
+/* 
+#floatingIcon {
+  transition: transform 0.3s ease; 
+} */
+
+/* #floatingIcon.swipe {
+  transform: translateX(-20px); 
+} */
+
+/* CSS Animation for smoother swipe */
+@keyframes swipeLeftToRight {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-100%); /* Adjust distance for desired swipe */
+    opacity: 0;
+  }
+}
+
+/* Apply this class for swipe effect */
+.swipe-animation {
+  animation: swipeLeftToRight 0.5s ease-out forwards;
+}
+
+/* If you want smooth transition on click without delay */
+.swipe-element {
+  transform: translateX(0);
+  transition: transform 0.3s ease-out; /* Use this for smooth swipe */
+}
+
+/* Add class to trigger swipe */
+.swipe-element.swipe-active {
+  transform: translateX(-100%); /* Swipe left effect */
+}

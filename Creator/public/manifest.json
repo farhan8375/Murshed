@@ -1,0 +1,54 @@
+{
+  "manifest_version": 3,
+  "name": "Farhan Creator Extension",
+  "version": "1.0.0",
+  "description": "A Chrome extension by Farhan.",
+  "icons": {
+    "16": "img/ziplyne.png",
+    "48": "img/Logomark.png",
+    "128": "img/logo.png"
+  },
+  "action": {
+    "default_title": "Farhan Creator",
+    "default_icon": {
+      "128": "img/logo.png"
+    }
+  },
+  "permissions": ["tabs", "storage", "scripting"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "run_at": "document_idle",
+      "js": ["contentScript.js"],
+      "css": ["contentScript.css"]
+    }
+  ],
+  "host_permissions": [
+    "https://www.example.com/*",
+    "https://*.yourdomain.com/*"
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "index.html",
+       
+        "assets/index-CtBr6y0t.js",
+        "assets/index-BF9sQMOI.css",
+         "img/Frame1.svg",
+         "img/Button.svg",
+         "img/Frame157.svg",
+         "img/Frame58.svg",
+         "img/Frame156.svg",
+         "img/ChevronsRight.svg",
+         "img/Logo.svg"
+
+      ],
+      "matches": ["<all_urls>"]
+    }
+  ],
+
+  "author": "Ziplyne"
+}
